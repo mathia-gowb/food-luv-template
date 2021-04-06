@@ -258,6 +258,22 @@ input[type="search"]{
     text-align:left;
     color:var(--white)
 }
+@media (min-width:800px){
+.about-container{
+    flex-direction: row;
+    margin:auto;
+    text-align: center;
+}
+.about-img img{
+    width:400px;
+    height:400px;
+}
+.about-text{
+    margin:0 2rem;
+    width: 60%;
+    max-width:600px
+}
+    }
 /* Archive */
 
 
