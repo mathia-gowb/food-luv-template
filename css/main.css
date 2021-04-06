@@ -104,11 +104,11 @@ a:hover{
 #copyRight{
     text-align:center
 }
-.about-container,.archive-front-container{
+.about-container{
     width:80%;
     margin:auto;
     display:flex;
-    flex-direction: column
+    flex-direction: column;
 }
 /* index page */
 .front-overlay-home{
@@ -298,6 +298,49 @@ input[type="search"]{
     height:200px;
     width:100%;
     object-fit: cover;
+}
+.archive-blogs{
+    display:grid;
+    grid-gap:1rem
+}
+.archive-blogs article{
+    position:relative
+}
+.archive-blogs article .blog-meta{
+    padding:1rem;
+
+}
+@media (min-width:560px){
+
+    .latest-post-image img,.latest-post-text{
+        height:300px;
+        width:300px
+
+    }
+
+    
+}
+@media (min-width:700px){
+    .archive-blogs{
+        grid-template-columns: auto auto ;
+        grid-gap:4rem 2rem;
+        
+    }
+    .archive-blogs article .blog-meta{
+        text-align: center;
+    }
+    .blogs-head{
+        text-align: center;
+    }
+
+}
+@media (min-width:850px){
+    .archive-blogs{
+        grid-template-columns: auto auto auto;
+        grid-gap:4rem 2rem
+        
+    }
+
 }
 /* Post */
 .main-post,.more-posts{
